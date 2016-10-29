@@ -10,23 +10,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
 闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
-下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
-一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【转】学习Javascript闭包（Closure）">
 <meta property="og:url" content="branlam.tk/undefined/null/2016-10-29-【转】学习Javascript闭包（Closure）.html">
 <meta property="og:site_name" content="BranLam的博客">
 <meta property="og:description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
 闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
-下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
-一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
-<meta property="og:updated_time" content="2016-10-29T00:00:32.981Z">
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。">
+<meta property="og:updated_time" content="2016-10-29T00:03:17.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】学习Javascript闭包（Closure）">
 <meta name="twitter:description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
 闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
-下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
-一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。">
   
     <link rel="alternative" href="/atom.xml" title="BranLam的博客" type="application/atom+xml">
   
@@ -165,7 +162,7 @@
       
         <p>转载，非原创。内容来自<a href="http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html" target="_blank" rel="external">学习Javascript闭包（Closure）</a><br>作者： <a href="http://www.ruanyifeng.com/home.html" target="_blank" rel="external">阮一峰</a><br>日期： 2009年8月30日</p>
 <p>闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。</p>
-<p>下面就是我的学习笔记，对于Javascript初学者应该是很有用的。</p>
+<p>下面就是我的学习笔记，对于Javascript初学者应该是很有用的。<br><a id="more"></a></p>
 <h2 id="一、变量的作用域"><a href="#一、变量的作用域" class="headerlink" title="一、变量的作用域"></a>一、变量的作用域</h2><p>要理解闭包，首先必须理解Javascript特殊的变量作用域。<br>变量的作用域无非就是两种：全局变量和局部变量。<br>Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">　　var n=999;</div><div class="line">　　function f1()&#123;</div><div class="line">　　　　alert(n);</div><div class="line">　　&#125;</div><div class="line">　　f1(); // 999</div></pre></td></tr></table></figure>
 <hr>
