@@ -6,17 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="branlam.tk">
-  <title>BranLam的博客</title>
+  <title>【转】学习Javascript闭包（Closure） | BranLam的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="南医 电子信息工程13级在校生、擅长前端技能">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BranLam的博客">
-<meta property="og:url" content="branlam.tk/index.html">
+  <meta name="description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
+闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
+一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】学习Javascript闭包（Closure）">
+<meta property="og:url" content="branlam.tk/undefined/null/2016-10-29-【转】学习Javascript闭包（Closure）.html">
 <meta property="og:site_name" content="BranLam的博客">
-<meta property="og:description" content="南医 电子信息工程13级在校生、擅长前端技能">
+<meta property="og:description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
+闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
+一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
+<meta property="og:updated_time" content="2016-10-29T00:00:32.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BranLam的博客">
-<meta name="twitter:description" content="南医 电子信息工程13级在校生、擅长前端技能">
+<meta name="twitter:title" content="【转】学习Javascript闭包（Closure）">
+<meta name="twitter:description" content="转载，非原创。内容来自学习Javascript闭包（Closure）作者： 阮一峰日期： 2009年8月30日
+闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
+下面就是我的学习笔记，对于Javascript初学者应该是很有用的。
+一、变量的作用域要理解闭包，首先必须理解Javascript特殊的变量作用域。变量的作用域无非就是两种：全局变量">
   
     <link rel="alternative" href="/atom.xml" title="BranLam的博客" type="application/atom+xml">
   
@@ -135,9 +145,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-【转】学习Javascript闭包（Closure）" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-【转】学习Javascript闭包（Closure）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -146,8 +154,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/undefined/null/2016-10-29-【转】学习Javascript闭包（Closure）.html">【转】学习Javascript闭包（Closure）</a>
+    <h1 class="article-title" itemprop="name">
+      【转】学习Javascript闭包（Closure）
     </h1>
   
 
@@ -207,125 +215,64 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-CSS-reset" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/undefined/null/2016-10-23-CSS-reset.html">CSS reset</a>
-    </h1>
   
+    <a href="/undefined/null/2016-10-23-CSS-reset.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS reset</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://www.gbtags.com/gb/networks/uploadimg/ddc81fa8-962d-4324-847d-92496557be2e.jpg" alt="cmd-markdown-logo"></p>
-<p>[TOC]</p>
-<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a><strong>前言</strong>：</h2><p>CSS作为控制HTML/XHTML的样式和布局的语言，在当今网页前端开发中至关重要。CSS目前最新版本为CSS5，更是能够真正做到网页表现与内容分离。但当今几款主流的浏览器（Chrome、FireFox、Opera、Safari、IE）都有一套自己理解CSS规范的方法，对默认样式有不同的默认设置值。这会导致同一页面在不同的浏览器下，有不同的效果。这就是浏览器兼容性问题之一，而CSS reset就是可以解决这一问题的方法。<br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/undefined/null/2016-10-23-CSS-reset.html#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/undefined/null/2016-10-23-CSS-reset.html" class="archive-article-date">
-  	<time datetime="2016-10-23T08:38:42.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-23</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="【转】学习Javascript闭包（Closure）" data-title="【转】学习Javascript闭包（Closure）" data-url="branlam.tk/undefined/null/2016-10-29-【转】学习Javascript闭包（Closure）.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"qq124061002"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
-
-  
-    <article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/undefined/null/2016-10-23-Hello-World-0.html">Hello World!</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://f.hiphotos.baidu.com/image/pic/item/960a304e251f95caec7ad465c1177f3e66095251.jpg" alt="cmd-markdown-logo"></p>
-<p><strong>自我介绍：</strong><br>    本人为南方医科大学13级电子信息工程，目前在校学习。擅长前端，爱好游戏动漫。   </p>
-<p><strong>小世界：</strong><br>捣鼓两天终于把这个属于自己的小世界建立起来。今天是它出生的第一天，按照程序员惯例要大喊一声：Hello World!<br>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/undefined/null/2016-10-23-Hello-World-0.html#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/undefined/null/2016-10-23-Hello-World-0.html" class="archive-article-date">
-  	<time datetime="2016-10-23T05:32:14.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-23</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 
       </div>
@@ -347,8 +294,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
